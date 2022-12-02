@@ -1,0 +1,20 @@
+[22,27,16,2,18,6] -> Insertion Sort
+Soru:Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+CEVAP:
+EN KÜÇÜK ELEMAN BULUNUR VE BAŞA GETİRİLİR. 
+AYNI İŞLEM Bİ SONRAKİ ELEMANA UYGULANIR VE BİTENE KADAR BÖYLE DEVAM EDER.
+--> [22,27,16,2,18,6] -> [2,22,27,16,18,6] -> [2,6,22,27,16,18] -> [2,6,16,22,27,18] -> [2,6,16,18,22,27]   
+
+SORU: Big-O gösterimini yazınız.
+CEVAP:
+1.işlem n, 2.işlem (n-1), 3.işlem (n-2) şeklinde gittiği için:
+[n(n+1)]/2 = (n^2+n)/2 
+Big O Notation : O(n^2)
+
+SORU: Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+        Average case: Aradığımız sayının ortada olması
+        Worst case: Aradığımız sayının sonda olması
+        Best case: Aradığımız sayının dizinin en başında olması.
+CEVAP: 
+En sonda sıralanan diziye bakıldığında 18 orta noktadadır bu yüzden Average Case kapsamına girer.
